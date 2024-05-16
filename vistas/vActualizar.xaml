@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="aajila7.vistas.vActualizar"
+             Title="vActualizar">
+    <VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="Agregar estudiante"
+            FontSize="20" 
+            HorizontalTextAlignment="Center"/>
+
+        <Entry x:Name="txtCodigo"
+        Placeholder="ingresar codigo"
+        Keyboard="Numeric"
+               IsReadOnly="True"/>
+        
+        <Entry x:Name="txtNombre"
+            Placeholder="ingresar nombre"/>
+        
+        <Entry x:Name="txtApellido"
+            Placeholder="ingresar apellido"/>
+        
+        <Entry x:Name="txtedad"
+            Placeholder="ingresar edad"/>
+        <Button x:Name="btnActualizar"
+                Text="Actualizar"
+                Clicked="btnActualizar_Clicked" />
+        <Button x:Name="btnEliminar"
+                Text="Eliminar"
+                Clicked="btnEliminar_Clicked"   />
+    </VerticalStackLayout>
+</ContentPage>
